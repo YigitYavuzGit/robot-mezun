@@ -1,0 +1,29 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/robotik/Desktop/kuka_ws/build/kuka_kr6_moveit
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/launch/moveit.launch.py
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/config/joint_limits.yaml
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/config/kinematics.yaml
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/config/kuka_kr6.srdf
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/config/moveit.rviz
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/config/moveit_controllers.yaml
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/config/ompl_planning.yaml
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/ament_index/resource_index/package_run_dependencies/kuka_kr6_moveit
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/ament_index/resource_index/parent_prefix_path/kuka_kr6_moveit
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/environment/ament_prefix_path.sh
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/environment/ament_prefix_path.dsv
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/environment/path.sh
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/environment/path.dsv
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/local_setup.bash
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/local_setup.sh
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/local_setup.zsh
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/local_setup.dsv
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/package.dsv
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/ament_index/resource_index/packages/kuka_kr6_moveit
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/cmake/kuka_kr6_moveitConfig.cmake
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/cmake/kuka_kr6_moveitConfig-version.cmake
+-- Symlinking: /home/robotik/Desktop/kuka_ws/install/kuka_kr6_moveit/share/kuka_kr6_moveit/package.xml

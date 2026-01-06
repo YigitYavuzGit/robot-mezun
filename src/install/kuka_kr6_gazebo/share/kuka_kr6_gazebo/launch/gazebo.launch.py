@@ -1,0 +1,1 @@
+/home/robotik/Desktop/kuka_ws/src/kuka_kr6_gazebo/launch/gazebo.launch.py

@@ -1,0 +1,1 @@
+/home/robotik/Desktop/kuka_ws/src/kuka_kr6_moveit/launch/moveit.launch.py

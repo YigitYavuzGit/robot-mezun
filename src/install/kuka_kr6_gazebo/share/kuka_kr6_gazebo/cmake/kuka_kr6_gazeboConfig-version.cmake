@@ -1,0 +1,1 @@
+/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_gazebo/ament_cmake_core/kuka_kr6_gazeboConfig-version.cmake

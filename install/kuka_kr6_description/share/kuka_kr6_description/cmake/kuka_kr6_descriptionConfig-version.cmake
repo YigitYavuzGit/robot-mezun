@@ -1,0 +1,1 @@
+/home/robotik/Desktop/kuka_ws/build/kuka_kr6_description/ament_cmake_core/kuka_kr6_descriptionConfig-version.cmake
