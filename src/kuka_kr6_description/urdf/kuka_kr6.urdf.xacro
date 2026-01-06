@@ -10,7 +10,7 @@
   <xacro:property name="mesh_base" value="file://$(find kuka_kr6_description)"/>
 
   <material name="kuka_orange">
-    <color rgba="0.9647 0.4706 0.1569 1.0"/>
+    <color rgba="0.9646 0.4706 0.1569 1.0"/>
   </material>
   <material name="kuka_grey">
     <color rgba="0.5059 0.4706 0.3882 1.0"/>
