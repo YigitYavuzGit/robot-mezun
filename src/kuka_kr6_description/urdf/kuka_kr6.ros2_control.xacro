@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:macro name="kuka_kr6_ros2_control" params="name prefix use_sim use_fake_hardware sim_gazebo">
+  <xacro:macro name="kuka_kr6_ros2_control" params="name use_sim use_fake_hardware sim_gazebo">
 
     <ros2_control name="${name}" type="system">
       
@@ -20,7 +20,7 @@
         </hardware>
       </xacro:if>
 
-      <joint name="${prefix}joint_a1">
+      <joint name="joint_a1">
         <command_interface name="position">
           <param name="min">-2.9671</param>
           <param name="max">2.9671</param>
@@ -34,7 +34,7 @@
         <state_interface name="effort"/>
       </joint>
 
-      <joint name="${prefix}joint_a2">
+      <joint name="joint_a2">
         <command_interface name="position">
           <param name="min">-3.3161</param>
           <param name="max">0.7854</param>
@@ -48,7 +48,7 @@
         <state_interface name="effort"/>
       </joint>
 
-      <joint name="${prefix}joint_a3">
+      <joint name="joint_a3">
         <command_interface name="position">
           <param name="min">-2.0944</param>
           <param name="max">2.7227</param>
@@ -62,7 +62,7 @@
         <state_interface name="effort"/>
       </joint>
 
-      <joint name="${prefix}joint_a4">
+      <joint name="joint_a4">
         <command_interface name="position">
           <param name="min">-3.2289</param>
           <param name="max">3.2289</param>
@@ -76,7 +76,7 @@
         <state_interface name="effort"/>
       </joint>
 
-      <joint name="${prefix}joint_a5">
+      <joint name="joint_a5">
         <command_interface name="position">
           <param name="min">-2.0944</param>
           <param name="max">2.0944</param>
@@ -90,7 +90,7 @@
         <state_interface name="effort"/>
       </joint>
 
-      <joint name="${prefix}joint_a6">
+      <joint name="joint_a6">
         <command_interface name="position">
           <param name="min">-6.1087</param>
           <param name="max">6.1087</param>

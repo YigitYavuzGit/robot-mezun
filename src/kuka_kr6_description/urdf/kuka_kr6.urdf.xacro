@@ -3,10 +3,7 @@
   
   <xacro:arg name="use_sim" default="true"/>
   <xacro:arg name="use_fake_hardware" default="false"/>
-  <xacro:arg name="prefix" default=""/>
   <xacro:arg name="sim_gazebo" default="true"/>
-
-  <xacro:property name="prefix" value="$(arg prefix)"/>
   <xacro:property name="mesh_base" value="file://$(find kuka_kr6_description)"/>
 
   <material name="kuka_orange">
@@ -18,7 +15,15 @@
 
   <xacro:include filename="$(find kuka_kr6_description)/urdf/kuka_kr6.ros2_control.xacro"/>
 
-  <link name="${prefix}base_link">
+  <link name="world"></link>
+
+  <joint name="base joint" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+  <link name="base_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -39,7 +44,7 @@
     </inertial>
   </link>
 
-  <link name="${prefix}link_1">
+  <link name="link_1">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -60,7 +65,7 @@
     </inertial>
   </link>
 
-  <link name="${prefix}link_2">
+  <link name="link_2">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -81,7 +86,7 @@
     </inertial>
   </link>
 
-  <link name="${prefix}link_3">
+  <link name="link_3">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -102,7 +107,7 @@
     </inertial>
   </link>
 
-  <link name="${prefix}link_4">
+  <link name="link_4">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -123,7 +128,7 @@
     </inertial>
   </link>
 
-  <link name="${prefix}link_5">
+  <link name="link_5">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -144,7 +149,7 @@
     </inertial>
   </link>
 
-  <link name="${prefix}link_6">
+  <link name="link_6">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -165,85 +170,84 @@
     </inertial>
   </link>
 
-  <link name="${prefix}flange"/>
-  <link name="${prefix}tool0"/>
-  <link name="${prefix}base"/>
+  <link name="flange"/>
+  <link name="tool0"/>
+  <link name="base"/>
 
-  <joint name="${prefix}joint_a1" type="revolute">
+  <joint name="joint_a1" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.400"/>
-    <parent link="${prefix}base_link"/>
-    <child link="${prefix}link_1"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
     <axis xyz="0 0 -1"/>
     <limit effort="150.0" lower="-2.9671" upper="2.9671" velocity="6.2832"/>
     <dynamics damping="10.0" friction="1.0"/>
   </joint>
 
-  <joint name="${prefix}joint_a2" type="revolute">
+  <joint name="joint_a2" type="revolute">
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
-    <parent link="${prefix}link_1"/>
-    <child link="${prefix}link_2"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
     <axis xyz="0 1 0"/>
     <limit effort="150.0" lower="-3.3161" upper="0.7854" velocity="5.2360"/>
     <dynamics damping="10.0" friction="1.0"/>
   </joint>
 
-  <joint name="${prefix}joint_a3" type="revolute">
+  <joint name="joint_a3" type="revolute">
     <origin rpy="0 0 0" xyz="0.455 0 0"/>
-    <parent link="${prefix}link_2"/>
-    <child link="${prefix}link_3"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
     <axis xyz="0 1 0"/>
     <limit effort="100.0" lower="-2.0944" upper="2.7227" velocity="6.2832"/>
     <dynamics damping="10.0" friction="1.0"/>
   </joint>
 
-  <joint name="${prefix}joint_a4" type="revolute">
+  <joint name="joint_a4" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.035"/>
-    <parent link="${prefix}link_3"/>
-    <child link="${prefix}link_4"/>
+    <parent link="link_3"/>
+    <child link="link_4"/>
     <axis xyz="-1 0 0"/>
     <limit effort="50.0" lower="-3.2289" upper="3.2289" velocity="6.6497"/>
     <dynamics damping="5.0" friction="0.5"/>
   </joint>
 
-  <joint name="${prefix}joint_a5" type="revolute">
+  <joint name="joint_a5" type="revolute">
     <origin rpy="0 0 0" xyz="0.420 0 0"/>
-    <parent link="${prefix}link_4"/>
-    <child link="${prefix}link_5"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
     <axis xyz="0 1 0"/>
     <limit effort="50.0" lower="-2.0944" upper="2.0944" velocity="6.7719"/>
     <dynamics damping="5.0" friction="0.5"/>
   </joint>
 
-  <joint name="${prefix}joint_a6" type="revolute">
+  <joint name="joint_a6" type="revolute">
     <origin rpy="0 0 0" xyz="0.080 0 0"/>
-    <parent link="${prefix}link_5"/>
-    <child link="${prefix}link_6"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
     <axis xyz="-1 0 0"/>
     <limit effort="30.0" lower="-6.1087" upper="6.1087" velocity="10.7338"/>
     <dynamics damping="2.0" friction="0.2"/>
   </joint>
 
-  <joint name="${prefix}joint_a6-flange" type="fixed">
-    <parent link="${prefix}link_6"/>
-    <child link="${prefix}flange"/>
+  <joint name="joint_a6-flange" type="fixed">
+    <parent link="link_6"/>
+    <child link="flange"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 
-  <joint name="${prefix}flange-tool0" type="fixed">
-    <parent link="${prefix}flange"/>
-    <child link="${prefix}tool0"/>
+  <joint name="flange-tool0" type="fixed">
+    <parent link="flange"/>
+    <child link="tool0"/>
     <origin rpy="0 1.5708 0" xyz="0 0 0"/>
   </joint>
 
-  <joint name="${prefix}base_link-base" type="fixed">
+  <joint name="base_link-base" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0"/>
-    <parent link="${prefix}base_link"/>
-    <child link="${prefix}base"/>
+    <parent link="base_link"/>
+    <child link="base"/>
   </joint>
 
   <xacro:kuka_kr6_ros2_control
     name="KukaKR6System"
-    prefix="$(arg prefix)"
     use_sim="$(arg use_sim)"
     use_fake_hardware="$(arg use_fake_hardware)"
     sim_gazebo="$(arg sim_gazebo)"/>
