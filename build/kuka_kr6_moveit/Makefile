@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotik/Desktop/kuka_ws/src/kuka_kr6_moveit
+CMAKE_SOURCE_DIR = /home/evlinux/robot-mezun/src/kuka_kr6_moveit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotik/Desktop/kuka_ws/build/kuka_kr6_moveit
+CMAKE_BINARY_DIR = /home/evlinux/robot-mezun/build/kuka_kr6_moveit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotik/Desktop/kuka_ws/build/kuka_kr6_moveit/CMakeFiles /home/robotik/Desktop/kuka_ws/build/kuka_kr6_moveit//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/evlinux/robot-mezun/build/kuka_kr6_moveit/CMakeFiles /home/evlinux/robot-mezun/build/kuka_kr6_moveit//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotik/Desktop/kuka_ws/build/kuka_kr6_moveit/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/evlinux/robot-mezun/build/kuka_kr6_moveit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

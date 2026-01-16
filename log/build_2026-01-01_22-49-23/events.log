@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000214] (-) JobUnselected: {'identifier': 'kuka_kr6_description'}
-[0.000281] (-) JobUnselected: {'identifier': 'kuka_kr6_gazebo'}
-[0.000296] (kuka_kr6_moveit) JobQueued: {'identifier': 'kuka_kr6_moveit', 'dependencies': OrderedDict({'kuka_kr6_description': '/home/robotik/Desktop/kuka_ws/install/kuka_kr6_description'})}
-[0.000419] (kuka_kr6_moveit) JobStarted: {'identifier': 'kuka_kr6_moveit'}
-[0.008161] (kuka_kr6_moveit) JobEnded: {'identifier': 'kuka_kr6_moveit', 'rc': 1}
-[0.018403] (-) EventReactorShutdown: {}

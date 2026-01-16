@@ -1,1 +1,1 @@
-/home/robotik/Desktop/kuka_ws/build/kuka_kr6_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/kuka_kr6_gazebo
+kuka_kr6_description;ros_gz_sim;ros_gz_bridge;ros_gz_image;gz_ros2_control;controller_manager;joint_state_broadcaster;joint_trajectory_controller;forward_command_controller;robot_state_publisher;xacro

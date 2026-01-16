@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotik/Desktop/kuka_ws/src/kuka_kr6_description
+CMAKE_SOURCE_DIR = /home/evlinux/robot-mezun/src/kuka_kr6_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotik/Desktop/kuka_ws/build/kuka_kr6_description
+CMAKE_BINARY_DIR = /home/evlinux/robot-mezun/build/kuka_kr6_description
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/robotik/Desktop/kuka_ws/build/kuka_kr6_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotik/Desktop/kuka_ws/src/kuka_kr6_description /home/robotik/Desktop/kuka_ws/src/kuka_kr6_description /home/robotik/Desktop/kuka_ws/build/kuka_kr6_description /home/robotik/Desktop/kuka_ws/build/kuka_kr6_description /home/robotik/Desktop/kuka_ws/build/kuka_kr6_description/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/evlinux/robot-mezun/build/kuka_kr6_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/evlinux/robot-mezun/src/kuka_kr6_description /home/evlinux/robot-mezun/src/kuka_kr6_description /home/evlinux/robot-mezun/build/kuka_kr6_description /home/evlinux/robot-mezun/build/kuka_kr6_description /home/evlinux/robot-mezun/build/kuka_kr6_description/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotik/Desktop/kuka_ws/src/kuka_kr6_gazebo
+CMAKE_SOURCE_DIR = /home/evlinux/robot-mezun/src/kuka_kr6_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotik/Desktop/kuka_ws/build/kuka_kr6_gazebo
+CMAKE_BINARY_DIR = /home/evlinux/robot-mezun/build/kuka_kr6_gazebo
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/robotik/Desktop/kuka_ws/build/kuka_kr6_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotik/Desktop/kuka_ws/src/kuka_kr6_gazebo /home/robotik/Desktop/kuka_ws/src/kuka_kr6_gazebo /home/robotik/Desktop/kuka_ws/build/kuka_kr6_gazebo /home/robotik/Desktop/kuka_ws/build/kuka_kr6_gazebo /home/robotik/Desktop/kuka_ws/build/kuka_kr6_gazebo/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/evlinux/robot-mezun/build/kuka_kr6_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/evlinux/robot-mezun/src/kuka_kr6_gazebo /home/evlinux/robot-mezun/src/kuka_kr6_gazebo /home/evlinux/robot-mezun/build/kuka_kr6_gazebo /home/evlinux/robot-mezun/build/kuka_kr6_gazebo /home/evlinux/robot-mezun/build/kuka_kr6_gazebo/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

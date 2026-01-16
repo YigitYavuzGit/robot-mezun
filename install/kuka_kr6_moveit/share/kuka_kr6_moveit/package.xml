@@ -1,1 +1,27 @@
-/home/robotik/Desktop/kuka_ws/src/kuka_kr6_moveit/package.xml
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>kuka_kr6_moveit</name>
+  <version>1.0.0</version>
+  <description>MoveIt configuration for KUKA KQ6R 1900</description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>kuka_kr6_description</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_ros_move_group</depend>
+  <depend>moveit_kinematics</depend>
+  <depend>moveit_planners_ompl</depend>
+  <depend>moveit_ros_visualization</depend>
+  <depend>moveit_simple_controller_manager</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>controller_manager</depend>
+  <depend>joint_trajectory_controller</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

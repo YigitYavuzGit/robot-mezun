@@ -1,1 +1,2 @@
-/home/robotik/Desktop/kuka_ws/build/kuka_kr6_moveit/ament_cmake_environment_hooks/local_setup.dsv
+source;share/kuka_kr6_moveit/environment/ament_prefix_path.sh
+source;share/kuka_kr6_moveit/environment/path.sh
