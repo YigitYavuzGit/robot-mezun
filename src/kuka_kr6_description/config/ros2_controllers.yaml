@@ -17,6 +17,8 @@ joint_state_broadcaster:
       - joint_a4
       - joint_a5
       - joint_a6
+      - wsg_50_base_joint_gripper_left
+      - wsg_50_base_joint_gripper_right
     interfaces:
       - position
       - velocity
@@ -30,6 +32,8 @@ arm_controller:
       - joint_a4
       - joint_a5
       - joint_a6
+      - wsg_50_base_joint_gripper_left
+      - wsg_50_base_joint_gripper_right
     command_interfaces:
       - position
     state_interfaces:
