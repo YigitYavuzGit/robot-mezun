@@ -1,9 +1,0 @@
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/uninstall.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/kuka_kr6_moveit_uninstall.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/test.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/edit_cache.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/rebuild_cache.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/list_install_components.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/install.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/install/local.dir
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_moveit/CMakeFiles/install/strip.dir

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kuka_kr6r900sixx">
+
+    <xacro:macro name="kuka_kr6r900sixx" params="use_sim use_fake_hardware sim_gazebo">
+
+        <xacro:arg name="initial_positions_file" default="initial_positions.yaml"/>
+
+        <!-- Import kuka_kr6r900sixx urdf file -->
+        <xacro:include filename="$(find kuka_kr6_description)/urdf/kuka_kr6.urdf.xacro" />
+
+        <!-- Import control_xacro -->
+        
+        <xacro:include filename="kuka_kr6r900sixx.ros2_control.xacro" />
+
+
+        <xacro:kuka_kr6r900sixx_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)" use_sim="${use_sim}" use_fake_hardware="${use_fake_hardware}" sim_gazebo="${sim_gazebo}"/>
+
+    </xacro:macro>
+
+    <xacro:kuka_kr6r900sixx 
+    use_sim="$(arg use_sim)" 
+    use_fake_hardware="$(arg use_fake_hardware)" 
+    sim_gazebo="$(arg sim_gazebo)"/>
+
+</robot>

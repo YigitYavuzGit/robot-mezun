@@ -25,6 +25,7 @@ def generate_launch_description():
         'xacro ', os.path.join(pkg_description, 'urdf', 'kuka_kr6.urdf.xacro'),
         ' use_sim:=true use_fake_hardware:=false sim_gazebo:=true'
     ])
+    
     robot_description = {'robot_description': robot_description_content}
 
     world_file = PathJoinSubstitution([pkg_gazebo, 'worlds', LaunchConfiguration('world')])

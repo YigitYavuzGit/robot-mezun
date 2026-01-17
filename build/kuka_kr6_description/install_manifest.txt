@@ -21,7 +21,7 @@
 /home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/meshes/collision/link_2.stl
 /home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/meshes/collision/link_5.stl
 /home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/meshes/collision/link_4.stl
-/home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/config/ros2_controllers.yaml
+/home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/config/ros2_controllers_old_backup.yaml
 /home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/launch/display.launch.py
 /home/evlinux/robot-mezun/install/kuka_kr6_description/share/kuka_kr6_description/rviz/display.rviz
 /home/evlinux/robot-mezun/install/kuka_kr6_description/share/ament_index/resource_index/package_run_dependencies/kuka_kr6_description

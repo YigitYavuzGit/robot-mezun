@@ -16,7 +16,7 @@ set(_kuka_kr6_moveit_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT kuka_kr6_moveit_FIND_QUIETLY)
-  message(STATUS "Found kuka_kr6_moveit: 1.0.0 (${kuka_kr6_moveit_DIR})")
+  message(STATUS "Found kuka_kr6_moveit: 0.3.0 (${kuka_kr6_moveit_DIR})")
 endif()
 
 # warn when using a deprecated package

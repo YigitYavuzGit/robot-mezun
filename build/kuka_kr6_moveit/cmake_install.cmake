@@ -43,13 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_kr6_moveit" TYPE DIRECTORY FILES
-    "/home/evlinux/robot-mezun/src/kuka_kr6_moveit/launch"
-    "/home/evlinux/robot-mezun/src/kuka_kr6_moveit/config"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/evlinux/robot-mezun/build/kuka_kr6_moveit/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/kuka_kr6_moveit")
 endif()
 
@@ -106,6 +99,18 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_kr6_moveit" TYPE FILE FILES "/home/evlinux/robot-mezun/src/kuka_kr6_moveit/package.xml")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_kr6_moveit" TYPE DIRECTORY FILES "/home/evlinux/robot-mezun/src/kuka_kr6_moveit/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_kr6_moveit" TYPE DIRECTORY FILES "/home/evlinux/robot-mezun/src/kuka_kr6_moveit/config")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_kr6_moveit" TYPE FILE FILES "/home/evlinux/robot-mezun/src/kuka_kr6_moveit/.setup_assistant")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

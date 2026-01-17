@@ -1,1 +1,0 @@
-/home/robotik/Desktop/kuka_ws/src/build/kuka_kr6_gazebo/ament_cmake_environment_hooks/local_setup.sh
