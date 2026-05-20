@@ -1,0 +1,11 @@
+# Default initial positions for gripperdelta's ros2_control fake system
+
+initial_positions:
+  elbow: 0
+  shoulder: 0
+  wrist1: 0
+  wrist2: 0
+  wrist3: 0
+  wrist4: 0
+  wsg_50_base_joint_gripper_left: -0.005
+  wsg_50_base_joint_gripper_right: 0.005

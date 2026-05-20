@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: robot_gripper_description
+    relative_path: urdf/gripper_delta_robot.urdf
+  srdf:
+    relative_path: config/gripperdelta.srdf
+  package_settings:
+    author_name: yigityavuz
+    author_email: yigityavuz728@gmail.com
+    generated_timestamp: 1779262635
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

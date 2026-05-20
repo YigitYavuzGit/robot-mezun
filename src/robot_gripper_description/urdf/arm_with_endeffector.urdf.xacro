@@ -1,0 +1,12 @@
+<robot name="gripperdelta" xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<xacro:include filename="$(find robot_gripper_description)/urdf/delta_urdf_v2.urdf"/>
+<xacro:include filename="$(find robot_gripper_description)/urdf/wsg_gripper.urdf.xacro" />
+
+    <joint name="wrist4_ee_joint" type="fixed">
+        <parent link="wrist4_link"/>
+        <child link="wsg_50_base_link"/>
+        <origin xyz="0.022 0 0" rpy="0 -1.57079633 0"/>
+    </joint>
+
+</robot>
