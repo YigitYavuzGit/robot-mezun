@@ -1,0 +1,198 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.0"
+    }
+    defaultPrim = "gripperdelta"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpxxugmrxd/gripperdelta.usdc
+
+
+Generated from Composed Stage of root layer /home/evlinux/robot-mezun/src/robot_gripper_description/urdf/usdex/gripperdelta.usdc
+
+
+Generated from Composed Stage of root layer /home/evlinux/robot-mezun/src/robot_gripper_description/urdf/temp/gripper_delta_robot_isaac.usd
+
+
+Generated from Composed Stage of root layer /home/evlinux/robot-mezun/src/robot_gripper_description/urdf/gripper_delta_robot_isaac/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "gripperdelta" (
+    prepend apiSchemas = ["IsaacRobotAPI", "IsaacLinkAPI"]
+)
+{
+    custom rel isaac:physics:robotJoints
+    prepend rel isaac:physics:robotJoints = [
+        </gripperdelta/Physics/shoulder>,
+        </gripperdelta/Physics/root_joint>,
+        </gripperdelta/Physics/elbow>,
+        </gripperdelta/Physics/wrist1>,
+        </gripperdelta/Physics/wrist2>,
+        </gripperdelta/Physics/wrist3>,
+        </gripperdelta/Physics/wrist4>,
+        </gripperdelta/Physics/wrist4_ee_joint>,
+        </gripperdelta/Physics/wsg_50_base_joint_gripper_left>,
+        </gripperdelta/Physics/wsg_50_base_joint_gripper_right>,
+        </gripperdelta/Physics/wsg_50_guide_joint_finger_left>,
+        </gripperdelta/Physics/wsg_50_guide_joint_finger_right>,
+    ]
+    custom rel isaac:physics:robotLinks
+    prepend rel isaac:physics:robotLinks = [
+        </gripperdelta/Geometry/base_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link/wrist4_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link/wrist4_link/wsg_50_base_link>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link/wrist4_link/wsg_50_base_link/wsg_50_gripper_left>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link/wrist4_link/wsg_50_base_link/wsg_50_gripper_right>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link/wrist4_link/wsg_50_base_link/wsg_50_gripper_left/wsg_50_finger_left>,
+        </gripperdelta/Geometry/base_link/shoulder_link/elbow_link/wrist1_link/wrist2_link/wrist3_link/wrist4_link/wsg_50_base_link/wsg_50_gripper_right/wsg_50_finger_right>,
+    ]
+
+    over "Physics"
+    {
+        over "shoulder" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "root_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "elbow" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wrist1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wrist2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wrist3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wrist4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wrist4_ee_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wsg_50_base_joint_gripper_left" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wsg_50_base_joint_gripper_right" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wsg_50_guide_joint_finger_left" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "wsg_50_guide_joint_finger_right" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+            over "shoulder_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "elbow_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "wrist1_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "wrist2_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "wrist3_link" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                over "wrist4_link" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    over "wsg_50_base_link" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                        over "wsg_50_gripper_left" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            over "wsg_50_finger_left" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                            }
+                                        }
+
+                                        over "wsg_50_gripper_right" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            over "wsg_50_finger_right" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

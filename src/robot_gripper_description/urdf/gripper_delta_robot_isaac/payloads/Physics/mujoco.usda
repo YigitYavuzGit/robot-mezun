@@ -1,0 +1,328 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.0"
+    }
+    defaultPrim = "gripperdelta"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpxxugmrxd/gripperdelta.usdc
+
+
+Generated from Composed Stage of root layer /home/evlinux/robot-mezun/src/robot_gripper_description/urdf/usdex/gripperdelta.usdc
+
+
+Generated from Composed Stage of root layer /home/evlinux/robot-mezun/src/robot_gripper_description/urdf/temp/gripper_delta_robot_isaac.usd
+
+
+Generated from Composed Stage of root layer /home/evlinux/robot-mezun/src/robot_gripper_description/urdf/gripper_delta_robot_isaac/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "gripperdelta"
+{
+    over "Physics"
+    {
+        def MjcActuator "shoulder_actuator"
+        {
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/shoulder>
+        }
+
+        def MjcActuator "elbow_actuator"
+        {
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/elbow>
+        }
+
+        def MjcActuator "wrist1_actuator"
+        {
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/wrist1>
+        }
+
+        def MjcActuator "wrist2_actuator"
+        {
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/wrist2>
+        }
+
+        def MjcActuator "wrist3_actuator"
+        {
+            uniform double mjc:forceRange:max = 9.512043952941895
+            uniform double mjc:forceRange:min = -9.512043952941895
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/wrist3>
+        }
+
+        def MjcActuator "wrist4_actuator"
+        {
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/wrist4>
+        }
+
+        def MjcActuator "wsg_50_base_joint_gripper_left_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, 0, -100, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            uniform double[] mjc:gainPrm = [100, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/wsg_50_base_joint_gripper_left>
+        }
+
+        def MjcActuator "wsg_50_base_joint_gripper_right_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, 0, -100, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 100
+            uniform double mjc:forceRange:min = -100
+            uniform double[] mjc:gainPrm = [100, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </gripperdelta/Physics/wsg_50_base_joint_gripper_right>
+        }
+
+        over "wsg_50_base_joint_gripper_left" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            custom float mjc:frictionloss = 100
+        }
+
+        over "wsg_50_base_joint_gripper_right" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            custom float mjc:frictionloss = 100
+        }
+
+        over "shoulder" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "root_joint"
+        {
+        }
+
+        over "elbow" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "wrist1" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "wrist2" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "wrist3" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "wrist4" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "wrist4_ee_joint"
+        {
+        }
+
+        over "wsg_50_guide_joint_finger_left"
+        {
+        }
+
+        over "wsg_50_guide_joint_finger_right"
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_link"
+        {
+            over "shoulder_link"
+            {
+                over "elbow_link"
+                {
+                    over "wrist1_link"
+                    {
+                        over "wrist2_link"
+                        {
+                            over "wrist3_link"
+                            {
+                                over "wrist4_link"
+                                {
+                                    over "wsg_50_base_link"
+                                    {
+                                        over "wsg_50_gripper_left"
+                                        {
+                                            over "wsg_50_finger_left"
+                                            {
+                                                over "tn__WSGFMF_d9"
+                                                {
+                                                }
+
+                                                over "contact_coefficients"
+                                                {
+                                                }
+
+                                                over "tn__WSGFMF_1_aC"
+                                                {
+                                                }
+                                            }
+
+                                            over "GUIDE_WSG50_110"
+                                            {
+                                            }
+
+                                            over "contact_coefficients"
+                                            {
+                                            }
+
+                                            over "GUIDE_WSG50_110_1"
+                                            {
+                                            }
+                                        }
+
+                                        over "wsg_50_gripper_right"
+                                        {
+                                            over "wsg_50_finger_right"
+                                            {
+                                                over "tn__WSGFMF_d9"
+                                                {
+                                                }
+
+                                                over "contact_coefficients"
+                                                {
+                                                }
+
+                                                over "tn__WSGFMF_1_aC"
+                                                {
+                                                }
+                                            }
+
+                                            over "GUIDE_WSG50_110"
+                                            {
+                                            }
+
+                                            over "contact_coefficients"
+                                            {
+                                            }
+
+                                            over "GUIDE_WSG50_110_1"
+                                            {
+                                            }
+                                        }
+
+                                        over "WSG50_110"
+                                        {
+                                        }
+
+                                        over "WSG50_110_1"
+                                        {
+                                        }
+                                    }
+
+                                    over "wrist4_link"
+                                    {
+                                    }
+
+                                    over "wrist4_link_1"
+                                    {
+                                    }
+                                }
+
+                                over "wrist3_link"
+                                {
+                                }
+
+                                over "wrist3_link_1"
+                                {
+                                }
+                            }
+
+                            over "wrist2_link"
+                            {
+                            }
+
+                            over "wrist2_link_1"
+                            {
+                            }
+                        }
+
+                        over "wrist1_link"
+                        {
+                        }
+
+                        over "wrist1_link_1"
+                        {
+                        }
+                    }
+
+                    over "elbow_link"
+                    {
+                    }
+
+                    over "elbow_link_1"
+                    {
+                    }
+                }
+
+                over "shoulder_link"
+                {
+                }
+
+                over "shoulder_link_1"
+                {
+                }
+            }
+
+            over "base_link"
+            {
+            }
+
+            over "base_link_1"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+
