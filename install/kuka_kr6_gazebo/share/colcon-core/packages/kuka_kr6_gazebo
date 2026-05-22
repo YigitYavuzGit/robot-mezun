@@ -1,1 +1,0 @@
-controller_manager:forward_command_controller:gz_ros2_control:joint_state_broadcaster:joint_trajectory_controller:kuka_kr6_description:robot_state_publisher:ros_gz_bridge:ros_gz_image:ros_gz_sim:xacro
