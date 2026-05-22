@@ -61,13 +61,11 @@
                 <state_interface name="velocity"/>
             </joint>
             <joint name="wsg_50_base_joint_gripper_right">
-                <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['wsg_50_base_joint_gripper_right']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-
         </ros2_control>
     </xacro:macro>
 </robot>

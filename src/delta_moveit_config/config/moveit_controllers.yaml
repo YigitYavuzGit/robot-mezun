@@ -22,6 +22,5 @@ moveit_simple_controller_manager:
     type: GripperCommand
     joints:
       - wsg_50_base_joint_gripper_left
-      - wsg_50_base_joint_gripper_right
     action_ns: gripper_cmd
     default: true

@@ -339,6 +339,7 @@
     <child link="wsg_50_gripper_right"/>
     <axis xyz="-1 0 0"/>
     <dynamics damping="100" friction="100"/>
+    <mimic joint="wsg_50_base_joint_gripper_left" multiplier="-1.0" offset="0.0"/>
     <limit effort="100" velocity="100" acceleration="1.0"/>
   </joint>
   <joint name="wsg_50_guide_joint_finger_right" type="fixed">
