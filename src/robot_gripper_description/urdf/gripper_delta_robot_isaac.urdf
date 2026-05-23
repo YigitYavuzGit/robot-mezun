@@ -209,7 +209,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//WSG50_110.stl" scale="1 1 1"/>
+        <mesh filename="package://robot_gripper_description/meshes/WSG50_110.stl" scale="1 1 1"/>
       </geometry>
       <material name="grey">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -218,7 +218,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0.0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//WSG50_110.stl" scale="1 1 1"/>
+        <mesh filename="package://robot_gripper_description/meshes/WSG50_110.stl" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>
@@ -231,7 +231,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -240,7 +240,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>
@@ -254,7 +254,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//WSG-FMF.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/WSG-FMF.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -263,7 +263,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//WSG-FMF.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/robot_gripper_description/meshes/WSG-FMF.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>
@@ -277,7 +277,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -286,7 +286,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/GUIDE_WSG50_110.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>
@@ -300,7 +300,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//WSG-FMF.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/WSG-FMF.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -309,7 +309,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/evlinux/robot-mezun/install/robot_gripper_description/share/robot_gripper_description/meshes//WSG-FMF.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://robot_gripper_description/meshes/WSG-FMF.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>
